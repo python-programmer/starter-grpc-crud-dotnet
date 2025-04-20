@@ -1,0 +1,92 @@
+# .gitignore for ASP.NET Core gRPC Project
+
+### General ###
+*.log
+*.tmp
+*.cache
+*.pid
+*.pid.lock
+*.pdb
+*.user
+*.userprefs
+*.ionide
+*.vspscc
+*.vssscc
+logs
+
+### Build Outputs ###
+**/[Bb]in/
+**/[Oo]bj/
+**/TestResults/
+**/publish/
+**/wwwroot/lib/  # Client-side libraries (e.g., npm, libman)
+artifacts/
+
+### NuGet ###
+**/[Nn]uget.exe
+**/packages/
+*.nupkg
+nuget.config
+
+### IDE/Editor ###
+# Visual Studio
+.vs/
+.vscode/
+*.suo
+*.userosscache
+*.csproj.user
+*.jsproj.user
+*.sln.iml
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.DotSettings
+
+# VS Code
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### Environment ###
+.env
+.env.local
+.env.development
+appsettings.Development.json  # Optional: Exclude dev config if secrets exist
+
+### Docker ###
+docker-compose.*.yml
+docker-compose.override.yml
+**/.dockerignore
+**/Dockerfile
+**/docker-compose*
+
+### gRPC-Specific ###
+# Protobuf generated files (if not auto-generated in obj/)
+# **/*.pb.cs
+# **/*.grpc.cs
+
+### macOS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+app.db
+
+### Linux ###
+*~
+
+### Test Coverage ###
+coverage/
+coverage.*
+*.lcov
+*.coverage
+*.coverage.xml
+
+### Misc ###
+*.swp
+*~
+*.sass-cache/
